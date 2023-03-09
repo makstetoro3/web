@@ -1,0 +1,165 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyGlobalUndefinedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E701" />
+          <option value="E128" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="PyQt5-stubs==5.15.6.0" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="PyQt5.QtWidgets" />
+          <option value="main.Sing.lineEdit_2" />
+          <option value="main.Sing.lineEdit" />
+          <option value="main.Sing.pushButton" />
+          <option value="main.MyWidget.lineEdit" />
+          <option value="main.MyWidget.lineEdit_2" />
+          <option value="main.MyWidget.pushButton_6" />
+          <option value="main.MyWidget.change_login" />
+          <option value="main.MyWidget.pushButton_2" />
+          <option value="main.MyWidget.pushButton_4" />
+          <option value="func.sing.Singing.lineEdit" />
+          <option value="func.sing.Singing.lineEdit_2" />
+          <option value="func.sing.Singing.pushButton" />
+          <option value="func.main.MyWidget.lineEdit_2" />
+          <option value="func.main.MyWidget.lineEdit" />
+          <option value="func.main.MyWidget.pushButton_4" />
+          <option value="func.main.MyWidget.pushButton_2" />
+          <option value="func.main.MyWidget.change_login" />
+          <option value="func.MainWin.MyWidget.lineEdit" />
+          <option value="func.MainWin.MyWidget.lineEdit_2" />
+          <option value="func.MainWin.MyWidget.pushButton_2" />
+          <option value="func.MainWin.MyWidget.change_login" />
+          <option value="func.MainWin.MyWidget.pushButton_4" />
+          <option value="func.main.Singing.pushButton" />
+          <option value="func.main.Singing.lineEdit_2" />
+          <option value="func.main.Singing.lineEdit" />
+          <option value="main.Singing.pushButton" />
+          <option value="main.Singing.lineEdit" />
+          <option value="main.Singing.lineEdit_2" />
+          <option value="MainWin.MyWidget.lineEdit_2" />
+          <option value="MainWin.MyWidget.lineEdit" />
+          <option value="MainWin.MyWidget.change_login" />
+          <option value="MainWin.MyWidget.pushButton_2" />
+          <option value="MainWin.MyWidget.pushButton_4" />
+          <option value="MainWin.MyWidget.tableWidget" />
+          <option value="MainWin.MyWidget.tabWidget" />
+          <option value="MainWin.MyWidget.svoystv" />
+          <option value="MainWin.MyWidget.price" />
+          <option value="MainWin.MyWidget.add_sloy" />
+          <option value="Setting.Setting.buttonBox" />
+          <option value="MainWin.MyWidget.lineEdit_3" />
+          <option value="Cry.Setting.buttonBox" />
+          <option value="Cry.Setting.comboBox_2" />
+          <option value="Cry.Setting.comboBox" />
+          <option value="Cry.Setting.horizontalSlider" />
+          <option value="Cry.Setting.pushButton_2" />
+          <option value="Cry.Setting.pushButton" />
+          <option value="MainWin.MyWidget.delet_sloy" />
+          <option value="MainWin.MyWidget.pushButton_3" />
+          <option value="Cry.Setting.label_4" />
+          <option value="Cry.Setting.lineEdit" />
+          <option value="Cry.Setting.lineEdit_2" />
+          <option value="MainWin.MyWidget.text" />
+          <option value="int.setReadOnly" />
+          <option value="int.setText" />
+          <option value="MainWin.MyWidget.lineprice" />
+          <option value="zak.zaking.label_3" />
+          <option value="zak.zaking.lineEdit" />
+          <option value="zak.zaking.lineEdit_2" />
+          <option value="zak.zaking.pushButton" />
+          <option value="zak.zaking.dateEdit" />
+          <option value="zak.zaking.comboBox" />
+          <option value="zak.Zaking.label_3" />
+          <option value="zak.Zaking.lineEdit_2" />
+          <option value="zak.Zaking.lineEdit" />
+          <option value="zak.Zaking.pushButton" />
+          <option value="zak.Zaking.dateEdit" />
+          <option value="zak.Zaking.comboBox" />
+          <option value="MainWin.MyWidget.bye" />
+          <option value="main.Singing.pushButton_2" />
+          <option value="MainWin.MyWidget.tableWidget_3" />
+          <option value="Cry.Setting.label" />
+          <option value="MainWin.MyWidget.label" />
+          <option value="MainWin.MyWidget.visiual_tort" />
+          <option value="code.MainWin.MyWidget.lineEdit" />
+          <option value="code.MainWin.MyWidget.lineEdit_2" />
+          <option value="code.MainWin.MyWidget.change_login" />
+          <option value="code.MainWin.MyWidget.pushButton_2" />
+          <option value="code.MainWin.MyWidget.pushButton_4" />
+          <option value="code.MainWin.MyWidget.tabWidget" />
+          <option value="code.MainWin.MyWidget.tableWidget" />
+          <option value="code.MainWin.MyWidget.svoystv" />
+          <option value="code.MainWin.MyWidget.tableWidget_3" />
+          <option value="code.MainWin.MyWidget.bye" />
+          <option value="code.MainWin.MyWidget.delet_sloy" />
+          <option value="code.MainWin.MyWidget.pushButton_3" />
+          <option value="code.MainWin.MyWidget.add_sloy" />
+          <option value="code.MainWin.MyWidget.lineEdit_3" />
+          <option value="code.MainWin.MyWidget.lineprice" />
+          <option value="code.MainWin.MyWidget.text" />
+          <option value="code.MainWin.MyWidget.label" />
+          <option value="code.MainWin.MyWidget.visiual_tort" />
+          <option value="code.zak.Zaking.label_3" />
+          <option value="code.zak.Zaking.lineEdit" />
+          <option value="code.zak.Zaking.lineEdit_2" />
+          <option value="code.zak.Zaking.pushButton" />
+          <option value="code.zak.Zaking.comboBox" />
+          <option value="code.zak.Zaking.dateEdit" />
+          <option value="code.Cry.Setting.pushButton" />
+          <option value="code.Cry.Setting.pushButton_2" />
+          <option value="code.Cry.Setting.horizontalSlider" />
+          <option value="code.Cry.Setting.lineEdit" />
+          <option value="code.Cry.Setting.lineEdit_2" />
+          <option value="code.Cry.Setting.comboBox" />
+          <option value="code.Cry.Setting.comboBox_2" />
+          <option value="code.Cry.Setting.label_4" />
+          <option value="code.Cry.Setting.label" />
+          <option value="code.main.Singing.pushButton" />
+          <option value="code.main.Singing.pushButton_2" />
+          <option value="code.main.Singing.lineEdit_2" />
+          <option value="code.main.Singing.lineEdit" />
+          <option value="MainWin.MyWidget.pushButton_5" />
+          <option value="code.MainWin.MyWidget.pushButton_5" />
+          <option value="code.MainWin.MyWidget.pushButton" />
+          <option value="code.MainWin.MyWidget.pushButton_6" />
+          <option value="MainWin.MyWidget.pushButton" />
+          <option value="MainWin.MyWidget.pushButton_6" />
+          <option value="pygame.sprite.Sprite.zeroing" />
+          <option value="pygame.sprite.Sprite.object" />
+          <option value="pygame.sprite.Sprite.status" />
+          <option value="pygame.sprite.Sprite.set_land" />
+          <option value="pygame.sprite.Sprite.drawing" />
+          <option value="pygame.sprite.Sprite.scroll" />
+          <option value="pygame.sprite.Sprite.rotate" />
+          <option value="pygame.sprite.Sprite.alt" />
+          <option value="pygame.sprite.Sprite.id" />
+          <option value="int.alt" />
+          <option value="int.id" />
+          <option value="int.rect" />
+          <option value="Gameplay.card.Card.spaw_spell" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

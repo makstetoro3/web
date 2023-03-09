@@ -1,0 +1,40 @@
+html, body {
+	background: #fcf8dd;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%	;
+	font-family: Montserrat, sans-serif;
+}
+
+ul.mainmenu {
+	list-style: none;
+	background: #7d0024;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	color: #fdc073;
+	font-size: 20px;
+	overflow: hidden;
+}
+ul.mainmenu li {
+	float: right;
+	margin: 25px 15px 0 40px;
+
+}
+ul.mainmenu li:last-child {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+ul.mainmenu li:first-child {
+	padding-right: 30px;
+}
+
+
+ul.mainmenu li a {
+	color: #ffd700;
+	text-decoration: none;
+}
+ul.mainmenu li a:hover {color: #fda83d;}

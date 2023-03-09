@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <link type="text/css" href="{{ url_for('static', filename='css/comm.css')}}" rel="stylesheet"/>
+</head>
+
+<h1>Отзывы</h1>
+{% if current_user.is_authenticated %}
+<a id="add-btn" href="news" class="btn btn-secondary">Добавить новость</a>
+{% endif %}
+{% for item in comments%}
+<div class="col-md6">
+    <h2>{{item.title}}</h2>
+    <div class="conten">
+        <p>{{item.content}}</p>
+    </div>
+    <div class="texr">
+        Автор - {{item.user.name}}, Дата написания - {{item.created_date.strftime("%Y-%m-%d %H:%M")}}
+    </div>
+    {% if current_user.is_authenticated and current_user == item.user %}
+    <div class="comm-btn">
+        <a href="/news/{{ item.id }}" class="btn btn-warning">
+            Изменить
+        </a>
+        <a href="/news_delete/{{ item.id }}" class="btn btn-danger">
+            Удалить
+        </a>
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+{% endblock %}
