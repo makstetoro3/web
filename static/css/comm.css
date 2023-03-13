@@ -16,13 +16,23 @@ html, body {
 	border-radius: 10px;
 }
 
+#add-btn:hover {
+	background: #005f00;
+	color: #fff;
+}
+
 .comm-btn a {
 	text-decoration: none;
 	background: #ccc;
 	padding: 5px 5px 5px 5px;
 	margin: 10px;
 	border-radius: 10px;
+	color: #000;
 }	
+
+.comm-btn a:hover { color: #fff; }
+
+.comm-btn { margin: 0 0 20px 0; }
 
 .col-btn {
 	padding-bottom: 20px;
@@ -40,11 +50,6 @@ html, body {
 
 .conten p {
 	width: 50%;
-}
-
-.texr {
-	padding-bottom: 10px;
-	margin-bottom: 10px;
 }
 
 .col-md6 h1 {

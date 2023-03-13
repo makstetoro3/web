@@ -26,10 +26,9 @@
         </div>
         {% endfor %}
         </p>
-        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p id="knw">{{ form.remember_me() }} {{ form.remember_me.label }}<a href="register">Нет аккаунта?</a></p>
         <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
         <div>{{ message }}</div>
-        <a href="register"><p>Нет аккаунта?</p></a>
     </form>
 </div>
 {% endblock %}

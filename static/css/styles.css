@@ -17,6 +17,8 @@ ul.mainmenu {
 	font-size: 20px;
 	overflow: hidden;
 }
+
+
 ul.mainmenu li {
 	float: right;
 	margin: 25px 15px 0 40px;
@@ -35,6 +37,12 @@ ul.mainmenu li:first-child {
 
 ul.mainmenu li a {
 	color: #ffd700;
+	background: none;
+	border: 0;
 	text-decoration: none;
 }
-ul.mainmenu li a:hover {color: #fda83d;}
+ul.mainmenu li a:hover {
+	color: #fda83d;
+	background: none;
+}
+	

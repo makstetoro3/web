@@ -1,5 +1,5 @@
 #all {
-	width: 275px;
+	width: 400px;
 	margin: 20px auto 0 auto;
 	padding-bottom: 20px;
 	border: 5px solid #7d0024;
@@ -17,4 +17,13 @@
 
 #all p {
 	padding-left: 40px;
+}
+
+
+.form-control {
+	width: 300px;
+}
+
+#knw label {
+	margin-right: 30px;
 }
