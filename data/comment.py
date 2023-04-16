@@ -1,6 +1,6 @@
 import datetime
-import sqlalchemy
-from sqlalchemy import orm
+from sqlalchemy import Column, Integer, ForeignKey, String, DateTime
+from sqlalchemy.orm import relationship
 
 from .db_session import SqlAlchemyBase
 
@@ -8,13 +8,10 @@ from .db_session import SqlAlchemyBase
 class Comment(SqlAlchemyBase):
     __tablename__ = 'comment'
 
-    id = sqlalchemy.Column(sqlalchemy.Integer,
-                           primary_key=True, autoincrement=True)
-    title = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    content = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    created_date = sqlalchemy.Column(sqlalchemy.DateTime,
-                                     default=datetime.datetime.now)
-
-    user_id = sqlalchemy.Column(sqlalchemy.Integer,
-                                sqlalchemy.ForeignKey("users.id"))
-    user = orm.relationship('User')
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    title = Column(String, nullable=False)
+    content = Column(String, nullable=False)
+    estimation = Column(Integer, nullable=False)
+    created_date = Column(DateTime, default=datetime.datetime.now, nullable=False)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    user = relationship('User', backref='comment')

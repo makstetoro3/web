@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+    <link type="text/css" href="{{ url_for('static', filename='css/catal.css')}}" rel="stylesheet"/>
+</head>
+<div id = 'content'>
+<div id="chapters">
+    <ul>
+    {% for item in types%}
+        <li><a href="#{{item.name}}"><h3>{{item.name}}</h3></a></li>
+    {% endfor %}
+    </ul>
+</div>
+<div id="cont">
+    <ul>
+        {%for title in types%}
+        <div class="block1">
+        <li>
+        <h2 id = '{{title.name}}'>{{title.name}}</h2>
+        <ul>
+            {% for item in dictionary[title.id] %}
+            <div class="elem"><li>
+                <img src={{item.img}}>
+                <h4>{{item.title}}</h4>
+                <p>{{item.short}}</p>
+            </li></div>
+            {% endfor%}
+        </ul></li></div>
+        {% endfor %}
+    </ul>
+</div></div>
+{% endblock %}

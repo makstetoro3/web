@@ -1,0 +1,54 @@
+body {
+	background: #fcf8dd;
+
+}
+
+.elem img {
+	width: 100%;
+}
+
+.elem {
+	box-shadow: 3px 3px 5px 5px;
+	width: 80%;
+	background: #fff;
+}
+
+.elem h4 {
+	padding: 0 5px 0 5px;
+}
+
+.elem p {
+	padding: 0 5px 0 5px;
+}
+
+.block1 ul {
+	display: grid;
+	width: 30%;
+	grid-template-columns: 100% 100% 100%;
+}
+
+#content {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 15% 85%;
+    align-items: start;
+    justify-content: space-between;
+}
+
+
+li {
+	list-style: none;
+}
+
+
+#chapters {
+	float: left;
+	padding: 10px 5% 0 0;
+}
+
+#chapters a {
+	color: #930020;
+	background: none;
+	border: 0;
+	text-decoration: none;
+}

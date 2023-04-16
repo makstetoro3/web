@@ -9,8 +9,8 @@ html, body {
 
 ul.mainmenu {
 	list-style: none;
-	background: #7d0024;
-	height: 80px;
+	background: #930020;
+	height: 60px;
 	margin: 0;
 	padding: 0;
 	color: #fdc073;
@@ -21,7 +21,7 @@ ul.mainmenu {
 
 ul.mainmenu li {
 	float: right;
-	margin: 25px 15px 0 40px;
+	margin: 0 15px 0 10px;
 
 }
 ul.mainmenu li:last-child {
@@ -32,6 +32,7 @@ ul.mainmenu li:last-child {
 
 ul.mainmenu li:first-child {
 	padding-right: 30px;
+	margin-top: 15px;
 }
 
 

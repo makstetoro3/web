@@ -6,7 +6,7 @@
 </head>
 
 <h1>Отзывы</h1>
-{% if current_user.is_authenticated %}
+{% if add_btn %}
 <a id="add-btn" href="news" class="btn btn-secondary">Добавить новость</a>
 {% endif %}
 {% for item in comments%}
