@@ -3,23 +3,14 @@ body {
 
 }
 
-.elem img {
+.card img {
 	width: 100%;
 }
 
-.elem {
-	box-shadow: 3px 3px 5px 5px;
+.card {
 	width: 80%;
-	background: #fff;
 }
 
-.elem h4 {
-	padding: 0 5px 0 5px;
-}
-
-.elem p {
-	padding: 0 5px 0 5px;
-}
 
 .block1 ul {
 	display: grid;

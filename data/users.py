@@ -12,8 +12,11 @@ class User(SqlAlchemyBase, UserMixin):
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    name = Column(String, unique=True, nullable=False)
+    login = Column(String, unique=True, nullable=False)
+    name = Column(String, nullable=True)
+    last_name = Column(String, nullable=True)
     email = Column(String, index=True, unique=True, nullable=False)
+    number = Column(String, nullable=True)
     hashed_password = Column(String, nullable=False)
     created_date = Column(DateTime, default=datetime.datetime.now, nullable=False)
 

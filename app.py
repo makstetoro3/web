@@ -42,6 +42,20 @@ def comment():
     return render_template("comments.html", comments=comments, add_btn=add_btn)
 
 
+@app.route('/cake/<int:id>')
+def product(id):
+    db_sess = db_session.create_session()
+    elem = db_sess.query(Cake).filter(Cake.id == id).first()
+    return render_template("product.html", product=elem)
+
+
+@app.route('/bread/<int:id>')
+def product(id):
+    db_sess = db_session.create_session()
+    elem = db_sess.query(Bread).filter(Bread.id == id).first()
+    return render_template("product.html", product=elem)
+
+
 @app.route('/register', methods=['GET', 'POST'])
 def reqister():
     form = RegisterForm()
@@ -51,12 +65,14 @@ def reqister():
                                    form=form,
                                    message="Пароли не совпадают")
         db_sess = db_session.create_session()
-        if db_sess.query(User).filter(User.email == form.email.data).first():
+        if db_sess.query(User).filter(User.login == form.login.data).first():
             return render_template('register.html', title='Регистрация',
                                    form=form,
-                                   message="Такой пользователь уже есть")
+                                   message="Такой логин занят")
         user = User(
+            login=form.login.data,
             name=form.name.data,
+            last_name=form.last_name.data,
             email=form.email.data,
         )
         user.set_password(form.password.data)
@@ -140,7 +156,7 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         db_sess = db_session.create_session()
-        user = db_sess.query(User).filter(User.email == form.email.data).first()
+        user = db_sess.query(User).filter(User.login == form.login.data).first()
         if user and user.check_password(form.password.data):
             login_user(user, remember=form.remember_me.data)
             return redirect("/")

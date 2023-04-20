@@ -8,10 +8,11 @@
     <h1>Регистрация</h1>
     <form action="" method="post" id="bod">
         {{ form.hidden_tag() }}
+        <div class="Error">{{message}}</div>
         <p>
-            {{ form.email.label }}<br>
-            {{ form.email(class="form-control", type="email") }}<br>
-            {% for error in form.email.errors %}
+            {{ form.login.label }}<br>
+            {{ form.login(class="form-control", type="login") }}<br>
+            {% for error in form.login.errors %}
         <p class="alert alert-danger" role="alert">
             {{ error }}
         </p>
@@ -36,6 +37,15 @@
         {% endfor %}
         </p>
         <p>
+            {{ form.email.label }}<br>
+            {{ form.email(class="form-control", type="email") }}<br>
+            {% for error in form.email.errors %}
+        <p class="alert alert-danger" role="alert">
+            {{ error }}
+        </p>
+        {% endfor %}
+        </p>
+        <p>
             {{ form.name.label }}<br>
             {{ form.name(class="form-control") }}<br>
             {% for error in form.name.errors %}
@@ -44,8 +54,17 @@
         </p>
         {% endfor %}
         </p>
+        <p>
+            {{ form.last_name.label }}<br>
+            {{ form.last_name(class="form-control", type="last_name") }}<br>
+            {% for error in form.email.errors %}
+        <p class="alert alert-danger" role="alert">
+            {{ error }}
+        </p>
+        {% endfor %}
+        </p>
         <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
-        {{message}}
+
     </form>
     <a href="login"><p>Есть аккаунт?</p></a>
 </div>
