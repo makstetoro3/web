@@ -11,7 +11,7 @@ class Comment(SqlAlchemyBase):
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String, nullable=False)
     content = Column(String, nullable=False)
-    estimation = Column(Integer, nullable=False)
+    estimation = Column(Integer, nullable=True)
     created_date = Column(DateTime, default=datetime.datetime.now, nullable=False)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     user = relationship('User', backref='comment')

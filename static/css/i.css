@@ -1,0 +1,35 @@
+ body {
+ 	background: #f7f1e9; 
+ }
+
+ .hel img {
+ 	position: relative;
+ }
+ .titl span {
+ 	color: #fff;
+ }
+ .titl h1 {
+ 	color: #fff;
+ }
+ .titl {
+ 	margin-left: 10%;
+ 	position: absolute;
+ 	text-transform: uppercase;
+ 	bottom: 10%;
+
+ }
+ .con {
+ 	margin: 0 auto;
+ }
+ 
+ .text-area p {
+ 	width: 30%;
+ 	margin: 0 auto;
+ 	text-align: center;
+	vertical-align: middle;
+ }
+
+ .text-area {
+ 	display: flex;
+	justify-content: center;
+ }

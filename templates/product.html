@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<img src="static/catalog/{{ product.img }}.png" alt="{{ product.title }}">
+<img src="../static/catalog/{{type}}{{product.id}}.png" alt={{product.title}} style="width: 30%;">
 <h1>{{ product.title }}</h1>
-<h2>{{ product.short }}</h2>
+<h2>цена: {{ product.short }}р</h2>
 <p>{{ product.description }}</p>
 {% endblock %}

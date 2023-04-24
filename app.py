@@ -42,18 +42,18 @@ def comment():
     return render_template("comments.html", comments=comments, add_btn=add_btn)
 
 
-@app.route('/cake/<int:id>')
+@app.route('/c/<int:id>')
 def product(id):
     db_sess = db_session.create_session()
     elem = db_sess.query(Cake).filter(Cake.id == id).first()
-    return render_template("product.html", product=elem)
+    return render_template("product.html", product=elem, type='c')
 
 
-@app.route('/bread/<int:id>')
-def product(id):
+@app.route('/b/<int:id>')
+def product1(id):
     db_sess = db_session.create_session()
     elem = db_sess.query(Bread).filter(Bread.id == id).first()
-    return render_template("product.html", product=elem)
+    return render_template("product.html", product=elem, type='b')
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -89,7 +89,7 @@ def cake():
     cata = dict()
     for j in types:
         cata[j.id] = db_sess.query(Cake).filter(Cake.type_id == j.id)
-    return render_template("catalog.html", types=types, dictionary=cata)
+    return render_template("catalog.html", types=types, dictionary=cata, type='c')
 
 
 @app.route('/cat_bread')
@@ -99,7 +99,7 @@ def bread():
     cata = dict()
     for j in types:
         cata[j.id] = db_sess.query(Bread).filter(Bread.type_id == j.id)
-    return render_template("catalog.html", types=types, dictionary=cata)
+    return render_template("catalog.html", types=types, dictionary=cata, type='b')
 
 
 @app.route('/news', methods=['GET', 'POST'])
