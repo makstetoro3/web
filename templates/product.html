@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<img src="../static/catalog/{{type}}{{product.id}}.png" alt={{product.title}} style="width: 30%;">
+<img src={{product.img}} alt={{product.title}} style="width: 30%;">
 <h1>{{ product.title }}</h1>
 <h2>цена: {{ product.short }}р</h2>
 <p>{{ product.description }}</p>

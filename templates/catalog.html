@@ -22,7 +22,7 @@
                         {% for item in dictionary[title.id] %}
                         <a class="link-fff" href="/{{type}}/{{item.id}}">
                             <div class="card" style="margin-bottom: 20px;">
-                                <img src="static/catalog/{{type}}{{item.id}}.png" class="card-img-top"
+                                <img src={{item.img}} class="card-img-top"
                                      alt={{item.title}}>
                                 <div class="card-body">
                                     <h5 class="card-title">{{item.title}}</h5>
